@@ -17,6 +17,15 @@ Recover
 ```
 curl -X POST "http://localhost:6333/collections/law_fragments/snapshots/upload" -H "Content-Type: multipart/form-data" -F "snapshot=@./law_fragments20250301.snapshot"
 ```
+# PostgreSQL
+# Backups
+Generate
+```
+```
+
+Replace data
+```
+```
 # SSH
 ## SCP
 Copy to VM
