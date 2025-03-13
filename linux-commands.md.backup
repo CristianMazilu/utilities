@@ -23,13 +23,19 @@ Add
 ```
 ```
 Apply
-## Backups
-Generate
 ```
 ```
 
+## Backups
+Generate
+```
+sudo pg_dump -h localhost -U postgres -d LegePeDos -F t -f ~/postgres_backup.tar
+```
+It will ask for password, so have it!
+
 Replace data
 ```
+
 ```
 # SSH
 ## SCP

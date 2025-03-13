@@ -29,10 +29,13 @@ Apply
 ## Backups
 Generate
 ```
+pg_dump -h localhost -U postgres -d LegePeDos -F t -f ~/postgres_<currentdate>.tar
 ```
+It will ask for password, so have it!
 
 Replace data
 ```
+pg_restore -h localhost -U postgres -d LegePeDos -F t ~/Downloads/postgres_<currentdate>.tar
 ```
 # SSH
 ## SCP
