@@ -46,7 +46,7 @@ nvim
 ### Authorize
 Put the .pub key in the `authorized_keys` file in:
 1. `cd ~/.ssh` directory - for root access.
-2. `cd 
+2. `cd /home/legalbuddy-admin/.ssh` directory - for account-based access.
 ## SCP
 Copy to VM
 ```
