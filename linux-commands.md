@@ -41,7 +41,7 @@ pg_restore -h localhost -U postgres -d LegePeDos -F t ~/Downloads/postgres_<curr
 ## Make ssh connection
 ### Generate
 ```
-nvim
+ssh-keygen -t rsa -b 4096 -C "user-description@machine-description" -f "filenames"
 ```
 ### Authorize
 Put the .pub key in the `authorized_keys` file in:
