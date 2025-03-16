@@ -18,6 +18,8 @@ Recover
 curl -X POST "http://localhost:6333/collections/law_fragments/snapshots/upload" -H "Content-Type: multipart/form-data" -F "snapshot=@./law_fragments20250301.snapshot"
 ```
 # PostgreSQL
+## Installation
+Install postgres on linux: follow instructions at `https://gist.github.com/ammarshah/40535b7e6c76597bda58afece875b7e6`
 ## Migrations
 Add
 ```
