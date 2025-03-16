@@ -38,6 +38,15 @@ Replace data
 pg_restore -h localhost -U postgres -d LegePeDos -F t ~/Downloads/postgres_<currentdate>.tar
 ```
 # SSH
+## Make ssh connection
+### Generate
+```
+nvim
+```
+### Authorize
+Put the .pub key in the `authorized_keys` file in:
+1. `cd ~/.ssh` directory - for root access.
+2. `cd 
 ## SCP
 Copy to VM
 ```
