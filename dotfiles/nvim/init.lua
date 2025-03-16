@@ -14,6 +14,19 @@ vim.opt.tabstop = 4          -- A tab is 4 spaces
 vim.keymap.set("n", "<leader>w", ":w<CR>")  -- Save with <leader>w
 vim.keymap.set("n", "<leader>q", ":q<CR>")  -- Quit with <leader>q
 
+-- Ensure lazy.nvim is installed
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+    vim.fn.system({
+        "git",
+        "clone",
+        "--filter=blob:none",
+        "https://github.com/folke/lazy.nvim.git",
+        lazypath,
+    })
+end
+vim.opt.rtp:prepend(lazypath)
+
 -- Load Lazy.nvim
 vim.opt.rtp:prepend("~/.config/nvim/lazy/lazy.nvim")
 
