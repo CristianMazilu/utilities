@@ -20,6 +20,13 @@ curl -X POST "http://localhost:6333/collections/law_fragments/snapshots/upload" 
 # PostgreSQL
 ## Installation
 Install postgres on linux: follow instructions at `https://gist.github.com/ammarshah/40535b7e6c76597bda58afece875b7e6`
+## Create database
+```
+sudo -u postgres psql
+postgres=# create database mydb;
+postgres=# create user myuser with encrypted password 'mypass';
+postgres=# grant all privileges on database mydb to myuser;
+```
 ## Migrations
 Add
 ```
