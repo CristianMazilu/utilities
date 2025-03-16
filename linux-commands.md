@@ -41,12 +41,12 @@ pg_restore -h localhost -U postgres -d LegePeDos -F t ~/Downloads/postgres_<curr
 ## Make ssh connection
 ### Generate
 ```
-nvim
+ssh-keygen -t rsa -b 4096 -C "user-description@machine-description" -f "filenames"
 ```
 ### Authorize
 Put the .pub key in the `authorized_keys` file in:
 1. `cd ~/.ssh` directory - for root access.
-2. `cd 
+2. `cd /home/legalbuddy-admin/.ssh` directory - for account-based access.
 ## SCP
 Copy to VM
 ```
